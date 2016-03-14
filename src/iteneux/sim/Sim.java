@@ -12,6 +12,7 @@ import iteneux.team.Team;
 import iteneux.utils.logger.LoggerWrapper;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Sim {
@@ -224,7 +225,9 @@ public class Sim {
 		teams.add(new ClubTeam("SS Folgore/Falciano", 10, 10, Association.SMR));
 		teams.add(new ClubTeam("Lincoln Red Imps", 10, 10, Association.GIB));
 		
-		System.out.println(teams);
+		Collections.reverse(teams);
+		
+		System.out.println(teams.size());
 		
 		List<QualificationRule> rules = new ArrayList<QualificationRule>();
 		
@@ -233,6 +236,7 @@ public class Sim {
 		rules.add(new QualificationRule(Phase.KNOCKOUT, 20));
 
 		Qualification nonChampions = new Qualification(teams, rules);
+		nonChampions.playAndDraw();
 		nonChampions.draw();
 		nonChampions.playQualifications();
 		//nonChampions.show();
