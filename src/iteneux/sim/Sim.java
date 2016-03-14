@@ -20,7 +20,7 @@ public class Sim {
 	public static void main(String[] args) {
 		List<Team> teams = new ArrayList<Team>();
 
-		/*
+		/* Test
 		teams.add(new Team("Chelsea", 10));
 		teams.add(new Team("Manchester City", 9));
 		teams.add(new Team("Manchester United", 9));
