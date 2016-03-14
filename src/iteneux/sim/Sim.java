@@ -20,8 +20,6 @@ public class Sim {
 	public static void main(String[] args) {
 		List<Team> teams = new ArrayList<Team>();
 
-		loggerWrapper.logger.severe("Your severe message");
-		loggerWrapper.logger.info("we");
 		/*
 		teams.add(new Team("Chelsea", 10));
 		teams.add(new Team("Manchester City", 9));
